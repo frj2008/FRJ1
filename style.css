@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" , "Cairo";
+}
+
+body {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+
+/* header */
+header {
+    z-index: 100;
+    height: 80px;
+    width: 80%;
+    background-color: #fff;
+    position:fixed;
+    top: 50px;
+    left: 8%;
+    padding: 0 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    box-shadow: 0px 1px 5px 2px #00a6ff;
+    transition-duration: 0.5s;
+}
+header:hover {
+    box-shadow: 0px 2px 6.5px 4px #000;
+}
+header .menu {
+    display: none;
+}
+header .logo h2 {
+    color: #000;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    font-size: 27px;
+}
+header .logo h2 span {
+    color: #00a6ff;
+}
+
+header .nav ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+header .nav ul a {
+    color: #00a6ff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+header .nav ul a:hover {
+    color: #00a6ff98;
+}
+
+/* HOME */
+#home {
+    height: 100vh;
+    width: 100%;
+    background-color: #00000062;
+}
+.brhome {
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+}
+.content-home {
+    background-color: transparent;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-home h2 {
+    color: #fff;
+    font-size: 30px;
+}
+.content-home h2 span {
+    color: #00a6ff;
+}
+.content-home p {
+    color: #fff;
+    width: 50%;
+    direction: rtl;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content-home a {
+    width: 15%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: #00a6ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition-duration: 0.5s;
+}
+.content-home a:hover {
+    background-color: transparent;
+    color: #00a6ff;
+    border: 2px solid #fff;
+}
+
+
+/* CONTENT */
+#content {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+#content .brcontent {
+    height: 10%;
+    background-color: transparent;
+}
+#content .content-content {
+    height: 90%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#content .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#content .text h2 {
+    color: #00a6ff;
+    font-size: 30px;
+    border-bottom: 2px solid #00a6ff;
+}
+#content .video {
+    width: 80%;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+#content .video .conVideo {
+    background-color: #00a6ff;
+    width: 30%;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;
+    transition-duration: 0.5s;
+}
+#content .video .conVideo:hover {
+    border: 2px solid #00a6ff;
+    background-color: #00a6ff53;
+}
+#content .video .conVideo .image {
+    width: 100%;
+    height: 180px;
+}
+#content .video .conVideo .image img {
+    width: 100%;
+    height: 100%;
+}
+#content .video .conVideo .title {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+#content .video .conVideo .title h3 {
+    direction: rtl;
+}
+#content .video .conVideo .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 25px;
+}
+#content .video .conVideo .buttons a {
+    width: 40%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+#content .button {
+    background-color: transparent;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#content .button a {
+    background-color: #00a6ff;
+    padding: 10px 5px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition-duration: 0.5s;
+}
+#content .button a:hover {
+    border: 2px solid #00a6ff;
+    background-color: #00a6ff53;
+    color: #000;
+}
+
+
+/* Services */
+#Services {
+    height: 100vh;
+    width: 100%;
+    background-color: #00a6ff;
+}
+.brServices {
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+}
+.contentServices {
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleServices {
+    background-color: #00a6ff;
+}
+.titleServices h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.contentServices .sectionSer {
+    background: transparent;
+    height: 65%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+.contentServices .sectionSer .Ser {
+    background-color: #fff;
+    width: 22%;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+.contentServices .sectionSer .Ser:hover {
+    transform:scale(1.07);
+}
+.contentServices .sectionSer .Ser .bb {
+    height: 70%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentServices .sectionSer .Ser .bb .icon {
+    height: 40%;
+    background-color: transparent;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentServices .sectionSer .Ser .bb .icon i {
+    font-size: 70px;
+}
+.contentServices .sectionSer .Ser .bb .titleser {
+    height: 30%;
+    background-color: transparent;
+    font-weight: 700;
+    color: #00a6ff;
+}
+.contentServices .sectionSer .Ser .bb .des {
+    height: 30%;
+    background-color: transparent;
+}
+.contentServices .sectionSer .Ser .bb .des p {
+    direction: rtl;
+    font-size: 17px;
+}
+.contentServices .sectionSer .Ser .aa {
+    background-color: transparent;
+    height: 15%;
+}
+
+
+.buttonser {
+    background-color: transparent;
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonser a {
+    color: #00a6ff;
+    height: 100%;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.buttonser a:hover {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+
+
+
+
+/* CONTACT */
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+#contact .brcontact {
+    background-color: transparent;
+    height: 10%;
+    width: 100%;
+}
+
+#contact .contentContact {
+    height: 80%;
+    width: 100%;
+}
+#contact .contentContact .titlecontact {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+#contact .contentContact .titlecontact h1 {
+    color: #00a6ff;
+    border-bottom: 2px solid #00a6ff;
+}
+
+#contact .contentContact .Accounts {
+    background-color: transparent;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contentContact .Accounts .homecart {
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+#contact .contentContact .Accounts .homecart .cart1 {
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px dotted #00a6ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+#contact .contentContact .Accounts .homecart .cart1 h2 {
+    color: #00a6ff;
+    direction: rtl;
+}
+#contact .contentContact .Accounts .homecart .cart1 .yue {
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff81;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#contact .contentContact .Accounts .homecart .cart1 .yue div {
+    width: 45%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#contact .contentContact .Accounts .homecart .cart1 .yue div img {
+    height: 100%;
+    width: 100%;
+}
+#contact .contentContact .Accounts .homecart .cart1 .yue a{
+    color: #00a6ff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+#contact .contentContact .Accounts .homecart .cart1 .yue a:hover {
+    color: #00a6ff;
+}
+
+#contact .contentContact .Accounts .homecart .cart2 {
+    width: 40%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px dotted #00a6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.5s;
+}
+#contact .contentContact .Accounts .homecart .cart2 h2 {
+    direction: rtl;
+    color: #00a6ff;
+}
+#contact .contentContact .Accounts .homecart .cart2 .yue2 {
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff81;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contact .contentContact .Accounts .homecart .cart2 .yue2 a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00a6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.cart1:hover , .cart2:hover {
+    transform: scale(1.07);
+}
+
+
+#contact .footer {
+    background-color: #00a6ff;
+    color: #fff;
+    width: 100%;
+    height: 10%;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+@media (min-width: 750px) and (max-width: 1050px)
+{
+    body {
+        background-position: center;
+    }
+    header{
+        padding: 0 30px;
+    }
+    header .logo h2 {
+        letter-spacing: 0px;
+        font-size: 25px;
+    }
+    header .nav ul {
+        gap: 18px;
+    }
+
+    /* HOME */
+    .content-home p {
+        width: 70%;
+    }
+
+    /* CONTENT */
+    #content {
+        height: 190vh;
+    }
+    #content .video {
+        height: 800px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #content .video .conVideo {
+        width: 45%;
+        height: 400px;
+    }
+
+    /* Services */
+    #Services {
+        height: 160vh;
+    }
+    .contentServices .sectionSer {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .contentServices .sectionSer .Ser {
+        height: 48%;
+        width: 44%;
+    }
+    .buttonser a {
+        height: 50%;
+    }
+
+    /* CONTACT */
+    #contact {
+        height: 170vh;
+    }
+    #contact .contentContact .Accounts {
+        justify-content: center;
+        align-items: center;
+    }
+    #contact .contentContact .Accounts .homecart {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #contact .contentContact .Accounts .homecart .cart1 {
+        height: 48%;
+        width: 60%;
+    }
+    #contact .contentContact .Accounts .homecart .cart2 {
+        height: 48%;
+        width: 60%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 749px)
+{
+    body {
+        background-position: center;
+    }
+    header{
+        width: 70%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    header .nav {
+        display: none;
+    }
+
+    /* HOME */
+    .content-home p {
+        width: 80%;
+    }
+    .content-home a {
+        width: 30%;
+    }
+
+    /* CONTENT */
+    #content {
+        height: 250vh;
+    }
+    #content .brcontent {
+        height: 4%;
+    }
+    #content .video {
+        height: 1260px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    #content .video .conVideo {
+        height: 400px;
+        width: 100%;
+    }
+    
+
+    /* Services */
+    #Services {
+        height: 250vh;
+    }
+    #Services .brServices {
+        height: 10%;
+    }
+    .contentServices .sectionSer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .contentServices .sectionSer .Ser {
+        height: 25%;
+        width: 80%;
+    }
+    .buttonser a {
+        height: 40%;
+    }
+
+    /* CONTACT */
+    #contact {
+        height: 150vh;
+    }
+    #contact .footer {
+        height: 11%;
+    }
+    #contact .contentContact .Accounts .homecart {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    #contact .contentContact .Accounts .homecart .cart1 {
+        width: 85%;
+        height: 48%;
+    }
+    #contact .contentContact .Accounts .homecart .cart2 {
+        width: 85%;
+        height: 48%;
+    }
+    #contact .contentContact .Accounts .homecart .cart2 .yue2 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 749px)
+{
+    #content .video .conVideo {
+        height: 400px;
+        width: 80%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 600px)
+{
+    #contact .contentContact .Accounts .homecart .cart1 {
+        width: 70%;
+        height: 48%;
+    }
+    #contact .contentContact .Accounts .homecart .cart2 {
+        width: 70%;
+        height: 48%;
+    }
+}
